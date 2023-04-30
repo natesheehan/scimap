@@ -7,7 +7,7 @@
 #' A data frame with the leading cities in the publications
 #' @export
 top_city = function(data) {
-  V = data[, c("City of Research organization")]
+  V = data[, c("City.of.Research.organization")]
 
   city_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))

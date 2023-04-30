@@ -6,7 +6,7 @@
 #' A dataframe with the leading research organisations in the publications
 #' @export
 top_org = function(data){
-  V=data[, c("Research Organizations standardized")]
+  V=data[, c("Research.Organizations...standardized")]
 
   org_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))

@@ -6,7 +6,7 @@
 #' A dataframe with the leading states in the publications
 #' @export
 top_state = function(data) {
-  V = data[, c("City of Research organization")]
+  V = data[, c("State.of.Research.organization")]
 
   state_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))

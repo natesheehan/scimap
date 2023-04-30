@@ -7,7 +7,7 @@
 #' A dataframe with the leading research fields in the publications
 #' @export
 top_research_field = function(data) {
-  V = data[, c("Fields of Research (ANZSRC 2020)")]
+  V = data[, c("Fields.of.Research..ANZSRC.2020.")]
 
   field_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))
@@ -17,7 +17,7 @@ top_research_field = function(data) {
   field_auths = data.frame(table(unlist(field_auths)))
 
   # Rename the columns
-  colnames(field_auths) = c("city", "count")
+  colnames(field_auths) = c("field", "count")
 
   # Sort by descending count and reset row names
   field_auths = field_auths[order(field_auths$count, decreasing = TRUE),]

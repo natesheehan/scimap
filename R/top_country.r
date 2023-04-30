@@ -7,7 +7,7 @@
 #' A dataframe with the leading countries in the publications
 #' @export
 top_country = function(data){
-  V=data[, c("Country of Research organization")]
+  V=data[, c("Country.of.Research.organization")]
 
   country_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))
