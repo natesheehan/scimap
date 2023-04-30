@@ -9,21 +9,23 @@
 plot_top_country = function(data){
   V=data[, c("Country of Research organization")]
 
-  pub_auths = sapply(V, function(x)
+  country_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))
 
-  pub_auths = lapply(pub_auths, trimws)
+  country_auths = lapply(country_auths, trimws)
 
-  author_counts = data.frame(table(unlist(pub_auths)))
+  country_auths = data.frame(table(unlist(country_auths)))
 
   # Rename the columns
-  colnames(author_counts) = c("authors", "count")
+  colnames(country_auths) = c("country", "count")
 
   # Sort by descending count and reset row names
-  author_counts = author_counts[order(author_counts$count, decreasing = TRUE), ]
-  rownames(author_counts) = seq_len(nrow(author_counts))
+  country_auths = country_auths[order(country_auths$count, decreasing = TRUE), ]
+  rownames(country_auths) = seq_len(nrow(country_auths))
 
   # Show the resulting dataframe
-  head(author_counts,20)
+  head(country_auths,20)
+
+  return(country_auths)
 }
 

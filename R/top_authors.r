@@ -25,6 +25,8 @@ plot_top_authors = function(data){
 
   # Show the resulting dataframe
   head(author_counts,20)
+
+  return(author_counts)
 }
 
 
