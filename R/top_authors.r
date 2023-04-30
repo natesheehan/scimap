@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-plot_top_authors = function(data){
+top_authors = function(data){
   V=data[, c("Authors")]
 
   pub_auths = sapply(V, function(x)

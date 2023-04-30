@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-plot_top_country = function(data){
+top_country = function(data){
   V=data[, c("Country of Research organization")]
 
   country_auths = sapply(V, function(x)

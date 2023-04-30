@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-plot_top_journals = function(data){
+top_journals = function(data){
   V=data[, c("Publisher")]
 
   journal_counts = data.frame(table((V)))
