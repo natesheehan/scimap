@@ -15,6 +15,3 @@ A dataframe with the leading research organisations in the publications
 \description{
 Top Research Organizations
 }
-\examples{
-top_org(data)
-}

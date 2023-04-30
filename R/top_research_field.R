@@ -6,8 +6,6 @@
 #' @return
 #' A dataframe with the leading research fields in the publications
 #' @export
-#' @examples
-#' top_research_field(data)
 top_research_field = function(data) {
   V = data[, c("Fields of Research (ANZSRC 2020)")]
 

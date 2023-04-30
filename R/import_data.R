@@ -7,8 +7,6 @@
 #' @return
 #' A dataframe from a specified file route and database
 #' @export
-#' @examples
-#' data = "file to your data"
 import_data = function(file,format){
 
   switch (format,

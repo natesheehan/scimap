@@ -5,8 +5,6 @@
 #' @return
 #' A dataframe with the leading states in the publications
 #' @export
-#' @examples
-#' top_state(data)
 top_state = function(data) {
   V = data[, c("City of Research organization")]
 

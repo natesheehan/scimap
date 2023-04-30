@@ -5,8 +5,6 @@
 #' @return
 #' A dataframe with the leading research organisations in the publications
 #' @export
-#' @examples
-#' top_org(data)
 top_org = function(data){
   V=data[, c("Research Organizations standardized")]
 

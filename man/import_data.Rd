@@ -17,6 +17,3 @@ A dataframe from a specified file route and database
 \description{
 Import Data
 }
-\examples{
-data = "file to your data"
-}

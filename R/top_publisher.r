@@ -5,8 +5,6 @@
 #' @return
 #' A dataframe with the leading publishers in the publications
 #' @export
-#' @examples
-#' top_journals(data)
 top_journals = function(data){
   V=data[, c("Publisher")]
 
