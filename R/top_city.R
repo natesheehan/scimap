@@ -7,8 +7,6 @@
 #' @export
 #'
 #' @examples
-#' file = "Dimensions-Publication-2023-04-30_00-09-19.csv"
-#' data = import_data(file,"csv")
 #' top_city(data)
 #'
 top_city = function(data) {

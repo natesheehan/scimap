@@ -8,8 +8,6 @@
 #' @export
 #'
 #' @examples
-#' file = "Dimensions-Publication-2023-04-30_00-09-19.csv"
-#' data = import_data(file,"csv")
 #' top_research_field(data)
 top_research_field = function(data) {
   V = data[, c("Fields of Research (ANZSRC 2020)")]

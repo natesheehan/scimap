@@ -8,8 +8,6 @@
 #' @export
 #'
 #' @examples
-#' file = "Dimensions-Publication-2023-04-30_00-09-19.csv"
-#' data = import_data(file,"csv")
 #' top_org(data)
 top_org = function(data){
   V=data[, c("Research Organizations standardized")]

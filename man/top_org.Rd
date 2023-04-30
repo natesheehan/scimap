@@ -9,6 +9,14 @@ top_org(data)
 \arguments{
 \item{data}{}
 }
+\value{
+A dataframe with the leading research organisations in the publications
+}
 \description{
 Top Research Organizations
+}
+\examples{
+file = 
+data = import_data(file,"csv")
+top_org(data)
 }
