@@ -6,7 +6,6 @@
 #' @return
 #' A dataframe with the leading countries in the publications
 #' @export
-#' @examples
 top_country = function(data){
   V=data[, c("Country of Research organization")]
 
