@@ -7,7 +7,7 @@
 #' A dataframe with the leading keywords in the publications
 #' @export
 top_keywords = function(data){
-  V=data[, c("MeSH terms")]
+  V=data[, c("MeSH.terms")]
 
   keywords_auths = sapply(V, function(x)
     strsplit(as.character(x), split = ";"))
@@ -22,9 +22,6 @@ top_keywords = function(data){
   # Sort by descending count and reset row names
   keywords_auths = keywords_auths[order(keywords_auths$count, decreasing = TRUE), ]
   rownames(keywords_auths) = seq_len(nrow(keywords_auths))
-
-  # Show the resulting dataframe
-  head(keywords_auths,20)
 
   return(keywords_auths)
 }

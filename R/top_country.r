@@ -23,9 +23,6 @@ top_country = function(data){
   country_auths = country_auths[order(country_auths$count, decreasing = TRUE), ]
   rownames(country_auths) = seq_len(nrow(country_auths))
 
-  # Show the resulting dataframe
-  head(country_auths,20)
-
   return(country_auths)
 }
 

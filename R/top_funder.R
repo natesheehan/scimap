@@ -23,9 +23,6 @@ top_funder = function(data){
   funder_auths = funder_auths[order(funder_auths$count, decreasing = TRUE), ]
   rownames(funder_auths) = seq_len(nrow(funder_auths))
 
-  # Show the resulting dataframe
-  head(funder_auths,20)
-
   return(funder_auths)
 }
 

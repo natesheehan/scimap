@@ -23,9 +23,6 @@ top_authors = function(data){
   author_counts = author_counts[order(author_counts$count, decreasing = TRUE), ]
   rownames(author_counts) = seq_len(nrow(author_counts))
 
-  # Show the resulting dataframe
-  head(author_counts,20)
-
   return(author_counts)
 }
 

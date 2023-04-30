@@ -22,8 +22,5 @@ top_state = function(data) {
   state_auths = state_auths[order(state_auths$count, decreasing = TRUE),]
   rownames(state_auths) = seq_len(nrow(state_auths))
 
-  # Show the resulting dataframe
-  head(state_auths, 20)
-
   return(state_auths)
 }

@@ -23,8 +23,5 @@ top_city = function(data) {
   city_auths = city_auths[order(city_auths$count, decreasing = TRUE),]
   rownames(city_auths) = seq_len(nrow(city_auths))
 
-  # Show the resulting dataframe
-  head(city_auths, 20)
-
   return(city_auths)
 }

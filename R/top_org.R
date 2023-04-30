@@ -22,9 +22,6 @@ top_org = function(data){
   org_auths = org_auths[order(org_auths$count, decreasing = TRUE), ]
   rownames(org_auths) = seq_len(nrow(org_auths))
 
-  # Show the resulting dataframe
-  head(org_auths,20)
-
   return(org_auths)
 }
 

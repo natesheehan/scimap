@@ -23,8 +23,5 @@ top_research_field = function(data) {
   field_auths = field_auths[order(field_auths$count, decreasing = TRUE),]
   rownames(field_auths) = seq_len(nrow(field_auths))
 
-  # Show the resulting dataframe
-  head(field_auths, 20)
-
   return(field_auths)
 }
