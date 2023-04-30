@@ -7,7 +7,7 @@
 top_org(data)
 }
 \arguments{
-\item{data}{}
+\item{data}{A publications dataframe}
 }
 \value{
 A dataframe with the leading research organisations in the publications
@@ -16,7 +16,5 @@ A dataframe with the leading research organisations in the publications
 Top Research Organizations
 }
 \examples{
-file = 
-data = import_data(file,"csv")
 top_org(data)
 }

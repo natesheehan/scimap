@@ -1,12 +1,11 @@
 #' Top Countries
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading countries in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_country(data)
 top_country = function(data){

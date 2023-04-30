@@ -1,12 +1,11 @@
 #' Top Authors
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading authors in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_authors(data)
 top_authors = function(data){

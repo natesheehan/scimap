@@ -1,14 +1,13 @@
 #' Top Authors
 #'
 #' @param data
+#' A pubblications dataframe
 #'
 #' @return
 #' A data frame with the leading cities in the publications
 #' @export
-#'
 #' @examples
 #' top_city(data)
-#'
 top_city = function(data) {
   V = data[, c("City of Research organization")]
 

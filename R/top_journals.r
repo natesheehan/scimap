@@ -1,12 +1,11 @@
 #' Top Journal
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading journals in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_journals(data)
 top_journals = function(data){

@@ -1,12 +1,11 @@
 #' Top Funder
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading funders in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_funder(data)
 top_funder = function(data){

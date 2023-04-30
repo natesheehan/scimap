@@ -18,7 +18,5 @@ A dataframe from a specified file route and database
 Import Data
 }
 \examples{
-file = 
-data = import_data(file,"csv")
-
+data = "file to your data"
 }

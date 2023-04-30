@@ -1,14 +1,12 @@
 #' Top Authors
 #'
 #' @param data
-#'
+#' A publications dataframe
 #' @return
 #' A dataframe with the leading states in the publications
 #' @export
-#'
 #' @examples
-#' top_State(data)
-#'
+#' top_state(data)
 top_state = function(data) {
   V = data[, c("City of Research organization")]
 

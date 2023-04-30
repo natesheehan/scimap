@@ -1,12 +1,10 @@
 #' Top Research Organizations
 #'
 #' @param data
-#'
+#' A publications dataframe
 #' @return
 #' A dataframe with the leading research organisations in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_org(data)
 top_org = function(data){

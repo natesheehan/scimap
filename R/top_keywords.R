@@ -1,12 +1,11 @@
 #' Top Keywords
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading keywords in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_keywords(data)
 top_keywords = function(data){

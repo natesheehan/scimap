@@ -1,12 +1,11 @@
 #' Top Research Field
 #'
 #' @param data
+#' A publications dataframe
 #'
 #' @return
 #' A dataframe with the leading research fields in the publications
-#'
 #' @export
-#'
 #' @examples
 #' top_research_field(data)
 top_research_field = function(data) {
