@@ -3,9 +3,14 @@
 #' @param data
 #'
 #' @return
+#' A dataframe with the leading countries in the publications
+#'
 #' @export
 #'
 #' @examples
+#' file = "Dimensions-Publication-2023-04-30_00-09-19.csv"
+#' data = import_data(file,"csv")
+#' top_country(data)
 top_country = function(data){
   V=data[, c("Country of Research organization")]
 

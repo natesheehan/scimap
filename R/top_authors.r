@@ -3,9 +3,14 @@
 #' @param data
 #'
 #' @return
+#' A dataframe with the leading authors in the publications
+#'
 #' @export
 #'
 #' @examples
+#' file = "Dimensions-Publication-2023-04-30_00-09-19.csv"
+#' data = import_data(file,"csv")
+#' top_authors(data)
 top_authors = function(data){
   V=data[, c("Authors")]
 
