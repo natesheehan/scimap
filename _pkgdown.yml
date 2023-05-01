@@ -1,0 +1,5 @@
+url: https://natesheehan.github.io/scimap/
+template:
+  bootstrap: 5
+  bootswatch: vapor
+
