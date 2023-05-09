@@ -1,4 +1,3 @@
-
 #' report
 #'
 #' @param data
@@ -8,8 +7,15 @@
 #' @return
 #' a terminal report based on the publication data
 #' @export
+library(pander)
+
 report = function(data,n){
 
+
+  timespan = paste0(min(dummy_data$PubYear),":",max(dummy_data$PubYear)) # timespan e.g. 1993:2020
+  sources = nrow(as.data.frame(unique(dummy_data$Source.title)))# number of sources (journals, books etc)
+  np = nrow(dummy_data) # number of publications
+  mc = mean(as.numeric(dummy_data$Times.cited)) # mean citations
   access = top_access(data)
   type = top_type(data)
   results = list(
@@ -29,8 +35,17 @@ report = function(data,n){
 
   cat("Your Results:\n")
   print(type)
-  print(results)
-  print(table(access))
+
+  # print results using pander
+  for (i in names(results)) {
+    if (is.data.frame(results[[i]])) {
+      pander::pander(results[[i]], style = "grid", caption = i)
+    } else {
+      print(results[[i]])
+    }
+  }
+
+  cat("\n\nAccess Table:\n\n")
+  pander::pander(table(access), style = "grid", caption = "Access Table")
 
 }
-
